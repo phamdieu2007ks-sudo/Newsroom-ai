@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsroom AI</title>
+    <link rel="stylesheet" href="bt1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <div class="logo-icon"><i class="fa-solid fa-chart-simple"></i></div>
+                <span>Newsroom AI</span>
+            </div>
+
+            <div class="menu-section">
+                <div class="menu-title">KHÔNG GIAN LÀM VIỆC</div>
+                <ul class="menu-items">
+                    <li><i class="fa-solid fa-table-cells-large"></i> Dashboard</li>
+                    <li><i class="fa-solid fa-pen-to-square"></i> Trình soạn thảo</li>
+                    <li class="active"><i class="fa-solid fa-wand-magic-sparkles"></i> Trợ lý AI</li>
+                    <li><i class="fa-regular fa-comment-dots"></i> Nguồn tin</li>
+                    <li>
+                        <i class="fa-solid fa-check-double"></i> Duyệt bài
+                        <span class="badge">6</span>
+                    </li>
+                    <li>
+                        <i class="fa-regular fa-paper-plane"></i> Xuất bản
+                        <span class="badge">4</span>
+                    </li>
+                    <li><i class="fa-solid fa-chart-column"></i> Phân tích</li>
+                    <li><i class="fa-regular fa-folder"></i> Thư viện Media</li>
+                </ul>
+            </div>
+
+            <div class="menu-section">
+                <div class="menu-title">HỆ THỐNG</div>
+                <ul class="menu-items">
+                    <li><i class="fa-solid fa-gear"></i> Cài đặt</li>
+                </ul>
+            </div>
+
+            <div class="user-profile">
+                <div class="avatar">LA</div>
+                <div class="user-info">
+                    <div class="name">Lan Anh</div>
+                    <div class="role">Phóng viên</div>
+                </div>
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <div class="breadcrumb">
+                    <span>Không gian làm việc</span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <span class="current">Trợ lý AI</span>
+                </div>
+                <div class="header-actions">
+                    <div class="search-bar">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Tìm kiếm bài viết, nguồn tin...">
+                        <span class="shortcut">/</span>
+                    </div>
+                    <button class="btn-primary"><i class="fa-solid fa-plus"></i> Bài viết mới</button>
+                    <i class="fa-regular fa-moon icon-btn"></i>
+                    <i class="fa-regular fa-bell icon-btn"></i>
+                    <div class="avatar small">LA</div>
+                </div>
+            </header>
+
+            <div class="content-area">
+                <div class="chat-sidebar">
+                    <button class="btn-new-chat"><i class="fa-solid fa-plus"></i> Cuộc trò chuyện mới</button>
+                    
+                    <div class="history-list">
+                        <div class="history-group">
+                            <div class="group-title">GẦN ĐÂY</div>
+                            <div class="history-item active">
+                                <i class="fa-regular fa-file-lines"></i>
+                                <div class="item-details">
+                                    <div class="item-title">Gợi ý tiêu đề bài AI</div>
+                                    <div class="item-time">Hôm nay</div>
+                                </div>
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                            <div class="history-item">
+                                <i class="fa-regular fa-file-lines"></i>
+                                <div class="item-details">
+                                    <div class="item-title">Tóm tắt báo cáo kinh tế</div>
+                                    <div class="item-time">Hôm nay</div>
+                                </div>
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                            <div class="history-item">
+                                <i class="fa-regular fa-file-lines"></i>
+                                <div class="item-details">
+                                    <div class="item-title">Kiểm tra giọng văn</div>
+                                    <div class="item-time">Hôm qua</div>
+                                </div>
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                            <div class="history-item">
+                                <i class="fa-regular fa-file-lines"></i>
+                                <div class="item-details">
+                                    <div class="item-title">Nguồn cho bài giáo dục</div>
+                                    <div class="item-time">Hôm qua</div>
+                                </div>
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chat-interface">
+                    <div class="chat-header">
+                        <div class="ai-info">
+                            <div class="ai-avatar"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                            <div>
+                                <h2>Trợ lý Newsroom AI</h2>
+                                <p>Hỏi đáp, phân tích và tăng tốc quy trình biên tập của bạn.</p>
+                            </div>
+                        </div>
+                        <div class="status">
+                            <span class="dot"></span> Đang hoạt động
+                        </div>
+                    </div>
+
+                    <div class="chat-messages" id="chat-messages">
+                        <div class="message ai">
+                            <div class="msg-avatar"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                            <div class="msg-content">
+                                <div class="msg-bubble">
+                                    <div class="msg-title">Xin chào Lan Anh, tôi có thể giúp gì cho bạn?</div>
+                                    <div class="msg-text">Tôi có thể hỗ trợ lên ý tưởng, tóm tắt tài liệu, cải thiện bài viết hoặc kiểm tra nguồn tin.</div>
+                                </div>
+                                <div class="suggestions">
+                                    <button><i class="fa-solid fa-wand-magic-sparkles"></i> Gợi ý 5 tiêu đề hấp dẫn</button>
+                                    <button><i class="fa-solid fa-wand-magic-sparkles"></i> Tóm tắt bài đang viết</button>
+                                    <button><i class="fa-solid fa-wand-magic-sparkles"></i> Kiểm tra tính trung lập</button>
+                                    <button><i class="fa-solid fa-wand-magic-sparkles"></i> Tìm điểm cần bổ sung nguồn</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="message user">
+                            <div class="msg-content">
+                                <div class="msg-bubble">
+                                    Hãy gợi ý 3 tiêu đề SEO cho bài viết về AI trong giáo dục Việt Nam.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="message ai">
+                            <div class="msg-avatar"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                            <div class="msg-content">
+                                <div class="msg-bubble">
+                                    <div class="msg-title">Dưới đây là 3 phương án được tối ưu:</div>
+                                    <div class="msg-text">
+                                        AI đang thay đổi giáo dục Việt Nam như thế nào?<br>
+                                        Lớp học thời AI: Cơ hội mới cho giáo dục Việt<br>
+                                        Trí tuệ nhân tạo mở ra tương lai nào cho trường học?
+                                    </div>
+                                    <div class="msg-actions">
+                                        <button><i class="fa-solid fa-check"></i> Chèn vào bài</button>
+                                        <button><i class="fa-regular fa-copy"></i> Sao chép</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chat-input-area">
+                        <div class="input-box">
+                            <button class="attach-btn"><i class="fa-solid fa-plus"></i></button>
+                            <input type="text" id="chat-input" placeholder="Hỏi Newsroom AI bất kỳ điều gì...">
+                            <button class="send-btn" id="send-btn"><i class="fa-solid fa-paper-plane"></i></button>
+                        </div>
+                        <div class="disclaimer">
+                            Newsroom AI có thể mắc lỗi. Hãy kiểm tra thông tin quan trọng và nguồn dẫn.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="bt1.js"></script>
+</body>
+</html>
