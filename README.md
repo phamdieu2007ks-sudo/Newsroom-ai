@@ -184,12 +184,12 @@ Hiển thị thông tin trợ lý AI, nội dung hội thoại, các nút gợi 
 ### GitHub
 
 **Link GitHub:**  
-``
+`https://github.com/phamdieu2007ks-sudo/Newsroom-ai.git`
 
 ### Video trình bày
 
 **Link Video:**  
-`[DÁN LINK VIDEO CỦA BẠN VÀO ĐÂY]`
+`https://youtu.be/ASy6LQMkAhE`
 
 ---
 
